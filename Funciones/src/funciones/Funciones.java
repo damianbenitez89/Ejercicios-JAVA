@@ -18,11 +18,48 @@ public class Funciones {
      */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Ingrese tu nombre: ");
-        String nombre = entrada.nextLine();
-        System.out.println("tu nombre es "+ nombre);
+        int numero1,numero2,numero3;
         
+        
+        System.out.print("ingrese el numero 1: ");
+        numero1=entrada.nextInt();
+        System.out.print("ingrese el numero 2: ");
+        numero2=entrada.nextInt();
+        System.out.print("ingrese el numero 3: ");
+        numero3=entrada.nextInt();
+        
+        calcularNumMayor(numero1,numero2,numero3);
+        
+        calcularNumMenor(numero1,numero2,numero3);
+        
+        promedio(numero1,numero2,numero3);
         
     }
-    
+    private static void promedio (int numero1, int numero2, int numero3){
+        float promedio = Float.valueOf(numero1+numero2+numero3)/3;
+        
+        System.out.println("el promedio de los numeros es "+promedio);
+    }
+    private static void calcularNumMayor (int numero1, int numero2, int numero3){
+        int numeroMayor=numero1;
+        if(numero2>numero1){
+            numeroMayor=numero2;
+        }
+        if(numero3>numero1){
+            numeroMayor=numero3;
+        }
+        
+        System.out.println("el numero mayor de los 3 es "+numeroMayor);
+    }
+    private static void calcularNumMenor (int numero1, int numero2, int numero3){
+        int numeroMenor=numero1;
+        if(numero2<numero1){
+            numeroMenor=numero2;
+        }
+        if(numero3<numero1){
+            numeroMenor=numero3;
+        }
+        
+        System.out.println("el numero menor de los 3 es "+numeroMenor);
+    }
 }
