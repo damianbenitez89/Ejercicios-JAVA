@@ -116,6 +116,7 @@ public class Formulario extends javax.swing.JFrame {
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         String nombre = this.txtNombre.getText();
         
+        
         lista.add(nombre);
         
         actualizarLista();
