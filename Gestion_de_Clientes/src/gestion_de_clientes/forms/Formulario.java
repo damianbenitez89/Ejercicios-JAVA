@@ -4,9 +4,10 @@
  * and open the template in the editor.
  */
 
-package gestion_de_clientes;
+package gestion_de_clientes.forms;
 
 
+import gestion_de_clientes.models.Cliente;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.DefaultListModel;

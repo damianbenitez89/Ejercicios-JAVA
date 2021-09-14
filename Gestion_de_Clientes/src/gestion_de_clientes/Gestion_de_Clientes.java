@@ -5,6 +5,8 @@
  */
 package gestion_de_clientes;
 
+import gestion_de_clientes.forms.Formulario;
+
 /**
  *
  * @author CamiDamiAmelie
